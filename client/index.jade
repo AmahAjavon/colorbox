@@ -2,9 +2,13 @@ doctype html
 html(lang='en')
   head
     meta(charset='utf-8')
-    title Prototype
+    title Color Boxes
     link(rel='stylesheet', href='/style.css')
   body
-    h1 Hello, World
-    script(src='/vendor/jquery/dist/jquery.js')
+    h2 Color Boxes
+    input#colors(type='text', placeholder='colors')
+    button#addBox(type='button') color
+    .container
+      #boxes       
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
     script(src='/main.js')
